@@ -1,5 +1,7 @@
 # ember-cli-typedoc-error-demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/buschtoens/ember-cli-typedoc-error-demo.svg)](https://greenkeeper.io/)
+
 This repository show cases an error when trying to run [typedoc](https://github.com/TypeStrong/typedoc)
 for a fresh installation of [ember-cli-typescript](https://github.com/emberwatch/ember-cli-typescript).
 
