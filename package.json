@@ -12,7 +12,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "generate-docs": "typedoc --out dist/docs"
   },
   "devDependencies": {
     "@types/ember": "^2.7.34",
@@ -38,6 +39,7 @@
     "ember-source": "~2.13.0",
     "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3",
+    "typedoc": "^0.7.1",
     "typescript": "^2.1"
   },
   "engines": {
