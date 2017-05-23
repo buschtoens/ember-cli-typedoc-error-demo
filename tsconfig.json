@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "noEmitOnError": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "ember-cli-typedoc-error-demo/tests/*": ["tests/*"],
+      "ember-cli-typedoc-error-demo/*": ["app/*"]
+    }
+  },
+  "include": [
+    "app/**/*",
+    "tests/**/*"
+  ]
+}
