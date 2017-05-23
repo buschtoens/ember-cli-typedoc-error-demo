@@ -1,50 +1,48 @@
 # ember-cli-typedoc-error-demo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repository show cases an error when trying to run [typedoc](https://github.com/TypeStrong/typedoc)
+for a fresh installation of [ember-cli-typescript](https://github.com/emberwatch/ember-cli-typescript).
+
+```
+$ yarn run generate-docs
+yarn run v0.24.5
+$ typedoc --out dist/docs
+
+Using TypeScript 2.3.2 from /home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/node_modules/typescript/lib
+/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/export.js:42
+            symbol.declarations.forEach(function (declaration) {
+                               ^
+
+TypeError: Cannot read property 'forEach' of undefined
+    at ExportConverter.convert (/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/export.js:42:32)
+    at Converter.convertNode (/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/converter.js:126:53)
+    at /home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/block.js:85:29
+    at Array.forEach (native)
+    at BlockConverter.convertStatements (/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/block.js:84:26)
+    at /home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/block.js:62:27
+    at Context.withScope (/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/context.js:107:9)
+    at /home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/block.js:61:25
+    at Context.withSourceFile (/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/context.js:87:9)
+    at BlockConverter.convertSourceFile (/home/jan/github/ember-cli-typedoc-error-demo/node_modules/typedoc/dist/lib/converter/nodes/block.js:58:17)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [Node.js](https://nodejs.org/) (with yarn or npm)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:buschtoens/ember-cli-typedoc-error-demo.git` this repository
 * `cd ember-cli-typedoc-error-demo`
-* `npm install`
+* `yarn`
 
-## Running / Development
+## Executing typedoc
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+```
+$ yarn run generate-docs
+```
